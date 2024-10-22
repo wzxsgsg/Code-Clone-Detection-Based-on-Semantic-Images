@@ -4,6 +4,9 @@ import os
 from anytree import AnyNode, RenderTree
 import networkx as nx
 
+token_type = ('DecimalInteger', 'HexInteger', 'Identifier', 'OctalInteger', 'String', 'DecimalFloatingPoint',
+              'BasicType', 'HexFloatingPoint')
+
 def parse_code(fileStr):
     programfile = open(fileStr, encoding='utf-8')
     #     print(os.path.join(rt,file))
